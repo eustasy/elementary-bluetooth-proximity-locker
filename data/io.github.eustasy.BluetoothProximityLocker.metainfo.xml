@@ -16,7 +16,7 @@
     <p>How it works:</p>
     <ul>
       <li>Pair your phone or other device with your computer.</li>
-      <li>Configure the device address via GSettings.</li>
+      <li>Open the app and select the device to monitor.</li>
       <li>The daemon monitors the device connection via the BlueZ D-Bus API.</li>
       <li>Screen locks automatically when the device disconnects.</li>
       <li>Screen unlocks automatically when the device reconnects.</li>
@@ -30,8 +30,8 @@
     </ul>
   </description>
 
-  <url type="homepage">https://github.com/eustasy-archive/elementary-bluetooth-proximity-locker</url>
-  <url type="bugtracker">https://github.com/eustasy-archive/elementary-bluetooth-proximity-locker/issues</url>
+  <url type="homepage">https://github.com/eustasy/elementary-bluetooth-proximity-locker</url>
+  <url type="bugtracker">https://github.com/eustasy/elementary-bluetooth-proximity-locker/issues</url>
 
   <developer_name>eustasy</developer_name>
 
