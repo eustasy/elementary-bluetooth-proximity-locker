@@ -10,7 +10,7 @@ sdk: io.elementary.Sdk
 command: io.github.eustasy.BluetoothProximityLocker
 
 finish-args:
-  # Wayland / X11 rendering (needed if a settings UI is added later)
+  # Wayland / X11 rendering for the settings window
   - '--socket=wayland'
   - '--socket=fallback-x11'
   - '--share=ipc'

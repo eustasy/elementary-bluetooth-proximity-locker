@@ -37,6 +37,14 @@ flatpak run io.github.eustasy.BluetoothProximityLocker --gapplication-service
 3. When the monitored device disconnects, it requests a session lock.
 4. When the device reconnects, it requests an unlock.
 
+### Security
+
+Unlocking is a convenience, not authentication. The app treats any BlueZ connection from the configured address as presence. It does not measure signal strength, so "in range" means anywhere the device can hold a connection, which can be another room. It does not check that the link is encrypted or that the device proved its pairing key.
+
+Lock and unlock requests go to `org.freedesktop.login1`, and apply to every session on the machine, not only your own.
+
+Do not rely on it where someone else having your device, or imitating it, would matter.
+
 ### Run Modes
 
 - UI mode: opens the settings window.
